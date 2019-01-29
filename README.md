@@ -60,4 +60,4 @@
 1.  User can clear all the input elements and Main Display Table by pressing the Clear button.
 
 #### Click image to zoom
-![Jest watch mode](https://raw.githubusercontent.com/vickochetkov/rct-cipher/master/public/200.gif)
+![Jest watch mode](https://raw.githubusercontent.com/vickochetkov/rct-rdx_cipher/master/public/200.gif)
