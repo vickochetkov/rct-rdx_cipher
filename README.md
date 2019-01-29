@@ -17,23 +17,23 @@
 ## Description
 
 * HTML, CSS, SCSS, React, Redux
-* React. Components features:
+* **React**. Components features:
      * On the Create React App basis;
      * Three main parts of the App: Main Display, Crypto Word, Word Encoding, each consists of several components;        
      * The Main Display component contains a table with all the data involved in the encryption process;
      * The Crypto WORD element contains an uncontrolled input;
      * The Word Encoding element has two read-only input components. One of them is for an original text inputed by alphabet buttons, another for the result of encryption;
 
-* Redux. Components features:
+* **Redux**. Components features:
      * Key input component is implemented with redux-form;
      * The main reducer component combines formReducer (redux-form) and textReducer (for the rest of App); 
-     * The Redux store provides an access to stored data for components from different levels of the ierarhy, such as:
-            * /src/components/display/display_index.js
-            * /src/components/key/keyOutput.js
-            * /src/components/text/clear-btn.js
-            * etc.
+     * The Redux store provides an access to stored data for components from different levels of the ierarhy, such as:     
+       - .../src/components/display/display_index.js
+       - .../src/components/key/keyOutput.js
+       - .../src/components/text/clear-btn.js
+       - etc.
 
-## User story
+> **User story**
 ### Main Display
 1.  The App shows a table with 4 rows in the follow order:
       * Original Text  
