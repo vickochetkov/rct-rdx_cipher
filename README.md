@@ -28,9 +28,9 @@
      * Key input component is implemented with redux-form;
      * The main reducer component combines formReducer (redux-form) and textReducer (for the rest of App); 
      * The Redux store provides an access to stored data for components from different levels of the ierarhy, such as:
-            * .../src/components/display/display_index.js
-            * .../src/components/key/keyOutput.js
-            * .../src/components/text/clear-btn.js
+            * /src/components/display/display_index.js
+            * /src/components/key/keyOutput.js
+            * /src/components/text/clear-btn.js
             * etc.
 
 ## User story
