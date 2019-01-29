@@ -1,44 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Visual Vigenère Cipher
 
-## Available Scripts
+### The Application encrypts inputed text with help of crypto word using The Vigenère cipher method.
 
-In the project directory, you can run:
+##### The Vigenère cipher is a method of encrypting alphabetic text by using a series of interwoven Caesar ciphers, based on the letters of a keyword (crypto word). It is a form of polyalphabetic substitution.
 
-### `npm start`
+##### The action of a Caesar cipher is to replace each plaintext letter with a different one a fixed number of places down the alphabet. In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<hr>
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### The main element of the App is the Main Display table. It makes it easier to understand principal and algorithm of the encryption.
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-### `npm run build`
+## Description
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* HTML, CSS, SCSS, React, Redux
+* React. Components features:
+     * On the Create React App basis;
+     * Three main parts of the App: Main Display, Crypto Word, Word Encoding, each consists of several components;        
+     * The Main Display component contains a table with all the data involved in the encryption process;
+     * The Crypto WORD element contains an uncontrolled input;
+     * The Word Encoding element has two read-only input components. One of them is for an original text inputed by alphabet buttons, another for the result of encryption;
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* Redux. Components features:
+     * Key input component is implemented with redux-form;
+     * The main reducer component combines formReducer (redux-form) and textReducer (for the rest of App); 
+     * The Redux store provides an access to stored data for components from different levels of the ierarhy, such as:
+            * .../src/components/display/display_index.js
+            * .../src/components/key/keyOutput.js
+            * .../src/components/text/clear-btn.js
+            * etc.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## User story
+### Main Display
+1.  The App shows a table with 4 rows in the follow order:
+      * Original Text  
+      * Key
+      * Calculation
+      * Encrypted Text
+2.  Original Text, Key and Encrypted Text are for letters of relevant words with their alphabet indices. Every letter has its own cell.
+3.  The Encrypted Text row is backlighted.
+4.  Calculation is for a visual mathematical representation of the encoding process. It shows how to compute the index of the encrypted letter.  
 
-### `npm run eject`
+### Crypto WORD
+1.  User can see and use a crypto word input element.
+1.  User can use a submit button element to turn an inputing crypto word into the current Crypto WORD.
+1.  The App checks if the crypto word is a single word which consists of letters only and contains as much as 3-10 characters.  
+1.  The App returns a mistake and warn User if User tries to submit a wrong word. The App hides an error message and does submit if User has fixed the word and tries to submit the correct word now.  
+1.  User can see current Crypto WORD in a table where every letter is  separated from others and has its alphabet index.
+1.  The App backlights the current crypto WORD letter.   
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Word Encoding
+1.  User can see and use a row of alphabet buttons to type in an original word.
+1.  User can see current encrypted equivalent for every alphabet letter at the bottom of each alphabet button.
+1.  User can see the original word in read-only input element.
+1.  User can see the encrypted backlighted text in read-only input element as it is being typed.
+1.  User can clear all the input elements and Main Display Table by pressing the Clear button.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Click image to zoom
+![Jest watch mode](https://raw.githubusercontent.com/vickochetkov/rct-cipher/master/public/200.gif)

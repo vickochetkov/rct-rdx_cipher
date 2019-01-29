@@ -1,0 +1,230 @@
+$basic-green: #00997a;
+$basic-grey: #444;
+$basic-blue: #6383a8;
+$basic-red: #d22d2d;
+$basic-white: #fff;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  font-weight: 400;
+  /* font-size: 10px; */
+  line-height: 1.7;
+  padding: 3rem;
+  box-sizing: border-box;
+  width: 1300px;
+  border: 1px solid $basic-green;
+  margin: 5rem;
+}
+
+.title {
+  font-size: 4rem;
+  color: $basic-grey;
+  text-align: center;
+}
+
+.title-2 {
+  font-size: 2.5rem;
+  color: $basic-blue;
+  text-align: center;
+}
+
+input {
+  width: 30rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-holder {
+  text-align: center;
+}
+
+/* tables */
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 5rem;
+  border: 1px solid $basic-green;
+  background-color: #f2f2f2;
+}
+
+#display {
+  background-color: #f2f2f2;
+}
+
+th {
+  border: 1px solid $basic-green;
+  width: 12rem;
+  height: 5rem;
+}
+
+.display {
+  padding: 0 3px 0 3px;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.normalFont {
+  font-size: 3rem;
+  color: $basic-green;
+}
+
+.smallFont {
+  color: $basic-red;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+button .smallFont:hover {
+  color: gold;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.active-th {
+  background-color: yellow;
+}
+
+/* buttons */
+
+.abc-font {
+  font-size: 3rem;
+  color: $basic-white;
+}
+
+.abc-font:hover {
+  color: gold;
+}
+
+.lbl {
+  font-size: 2rem;
+  color: $basic-blue;
+  width: 20rem;
+  text-align: left;
+  padding-left: .5rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  outline: 0;
+  padding: 0 2rem;
+  margin: 0 .5rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: $basic-white;
+  background-color: $basic-blue;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+
+
+}
+
+.btn:hover {
+  background-color: #6d8cb0;
+  color: black;
+}
+
+button:focus {
+    outline: 1px solid $basic-white;
+    outline-offset: -4px;
+}
+
+.btn-abc {
+  font-family: "Tahoma", sans-serif;
+  background-color: $basic-grey;
+  border-radius: 4px;
+  width: 4.5rem;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-abc:hover {
+  transform: scale(1.1);
+  background-color: black;
+}
+
+.buttons {
+  border: none;
+}
+
+.errMsg {
+  color: $basic-red;
+  font-size: 2.5rem;
+}
+
+/* grid */
+.wrapper {
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: [col] 20rem [col] 20rem [col] 20rem [col] 20rem  ;
+  grid-template-rows: [row] auto [row];
+  background-color: $basic-white;
+  color: $basic-grey;
+}
+
+.box {
+  background-color: $basic-grey;
+  color: $basic-white;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  /* font-size: 150%; */
+}
+
+.a {
+  grid-column: col / span 2;
+  grid-row: row ;
+}
+
+.b {
+  grid-column: col 3 / span 2 ;
+  grid-row: row ;
+  }
+
+.c {
+  grid-column: col / span 4;
+  grid-row: row 2;
+  height: 6rem;
+}
+
+.clear {
+  width: 50rem;
+  margin-top: .5rem;
+}
+
+.fieldInput {
+  text-align:center !important;
+  width: 42%;
+  font-size: 2rem !important;
+  color: $basic-blue !important;
+  // font-size: 150%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
